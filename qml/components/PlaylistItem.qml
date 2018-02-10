@@ -9,8 +9,14 @@ ListViewItemWithActions{
     width: parent.width
     height: Theme.itemHeightHuge
 
-    icon: cover
-    label: artist+" - "+title
+<<<<<<< HEAD
+    icon: "image://theme/music"
+=======
+    icon: cover != "" ? cover : "image://theme/music"
+>>>>>>> f5a4e52... [ui] Tidy up user interface
+    label: title
+    description: artist
+    showNext: false
 
     actions: Rectangle {
         id: playListItemActions
